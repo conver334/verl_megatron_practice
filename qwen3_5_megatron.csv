@@ -9,6 +9,9 @@ model_size,GPU,seq_len*GBS,tp*cp,pp*ep,recompute_mode,tflops_per_gpu,peak_mem_gb
 35B,32x H100 80G,128k*64,2*4,4*8,selective_moe,,,
 35B,32x H100 80G,128k*64,2*4,1*4,full,169,43,megatron-fsdp
 35B,32x H100 80G,128k*64,2*4,1*8,full,173,43,megatron-fsdp
+35B,32x H100 80G,128k*64,2*4,1*8,full,173,43,megatron-fsdp; DeepEP; 
+35B,32x H100 80G,128k*64,2*4,1*8,full,178,44,megatron-fsdp; MoE fusion; 
+35B,32x H100 80G,128k*64,2*4,1*8,full,181,43,megatron-fsdp; DeepEP; MoE fusion; 
 35B,32x H100 80G,128k*64,2*4,1*16,full,137,43,megatron-fsdp
 35B,32x H100 80G,128k*64,2*8,1*4,full,115,35,megatron-fsdp
 35B,32x H100 80G,128k*64,2*8,1*8,full,126,34,megatron-fsdp
